@@ -1,0 +1,95 @@
+/* src/styles/Header.module.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;
+    padding: 1rem 2rem;
+    color: white;
+    position: relative;
+    height: 90px;
+
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .Header_header__hbiCa .Header_logo__v\+5ft img {
+    width: 100px;
+    height: 75px;
+}
+  .nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav ul li {
+    position: relative;
+  }
+  
+  .nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #000000;
+    display: none;
+    padding: 0.5rem;
+  }
+  
+  .nav ul li:hover .submenu {
+    display: block;
+  }
+  
+  .contactBtn {
+    background: #ff5a5f;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    color: white;
+  }
+  
+  .menuToggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .nav {
+      display: none;
+      flex-direction: column;
+      background: #000000;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 145px;
+      
+    }
+    .Header_header__hbiCa .Header_logo__v\+5ft img {
+      width: 90px;
+      height: 75px;
+  }
+    .nav.open {
+      display: flex;
+    }
+  
+    .nav ul {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 3px 10px;
+    }
+  
+    .menuToggle {
+      display: block;
+    }
+  }
+  
