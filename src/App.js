@@ -1,14 +1,21 @@
-import logo from './logo.svg';
+// src/App.js
+import React from 'react';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './pages/Home';
+import Services from './pages/Services';
 import './App.css';
-import React, { userState, useState } from 'react';
+
 function App() {
-  const [count, setCount] = useState(0);
   return (
-<div style={{textAlgin:'center', padding:'50px'}}>
-<h1>Hello React 👋</h1>
-<p>You clicked {count} times</p>
-<button onClick={()=> setCount(count +1)}>Click Me</button>
-</div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+      </Routes>
+    </Router>
   );
 }
 

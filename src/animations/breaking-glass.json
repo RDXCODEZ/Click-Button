@@ -1,0 +1,26 @@
+{
+    "v": "5.7.4",
+    "fr": 30,
+    "ip": 0,
+    "op": 120,
+    "w": 800,
+    "h": 800,
+    "nm": "Breaking Glass Animation",
+    "ddd": 0,
+    "assets": [],
+    "layers": [
+      {
+        "ty": 4,
+        "nm": "Glass Layer",
+        "ind": 1,
+        "refId": "image_0",
+        "ks": {
+          "o": {
+            "a": 0,
+            "k": 100
+          }
+        }
+      }
+    ]
+  }
+  
